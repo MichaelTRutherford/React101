@@ -16,7 +16,7 @@ class StarWars extends React.Component{
 // https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api
 //https://raw.githubusercontent.com/akabab/starwars-api/master/api
   getNewCharacter(){
-    const randomNumber = Math.round(Math.random() * 88)
+    const randomNumber = Math.ceil(Math.random() * 88)
     const url = `https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/id/${randomNumber}.json`
     fetch(url)
       .then(response => response.json())
